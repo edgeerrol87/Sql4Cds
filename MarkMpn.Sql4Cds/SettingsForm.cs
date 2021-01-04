@@ -33,6 +33,7 @@ namespace MarkMpn.Sql4Cds
             showTooltipsCheckbox.Checked = settings.ShowIntellisenseTooltips;
             maxDopUpDown.Value = settings.MaxDegreeOfPaallelism;
             autoSizeColumnsCheckBox.Checked = settings.AutoSizeColumns;
+            bypassPluginsCheckbox.Checked = settings.BypassPlugins;
 
             _settings = settings;
         }
@@ -58,6 +59,7 @@ namespace MarkMpn.Sql4Cds
                 _settings.ShowIntellisenseTooltips = showTooltipsCheckbox.Checked;
                 _settings.MaxDegreeOfPaallelism = (int) maxDopUpDown.Value;
                 _settings.AutoSizeColumns = autoSizeColumnsCheckBox.Checked;
+                _settings.BypassPlugins = bypassPluginsCheckbox.Checked;
             }
         }
     }

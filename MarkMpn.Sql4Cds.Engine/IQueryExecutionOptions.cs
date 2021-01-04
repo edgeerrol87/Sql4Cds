@@ -80,5 +80,10 @@ namespace MarkMpn.Sql4Cds.Engine
         /// The maximum number of worker threads to use to execute DML queries
         /// </summary>
         int MaxDegreeOfParallelism { get; }
+
+        /// <summary>
+        /// Indicates if queries should be executed bypassing plugins
+        /// </summary>
+        bool BypassPlugins { get; }
     }
 }

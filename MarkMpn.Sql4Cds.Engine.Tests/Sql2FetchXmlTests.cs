@@ -36,6 +36,8 @@ namespace MarkMpn.Sql4Cds.Engine.Tests
 
         int IQueryExecutionOptions.MaxDegreeOfParallelism => 10;
 
+        bool IQueryExecutionOptions.BypassPlugins => false;
+
         [TestMethod]
         public void SimpleSelect()
         {
