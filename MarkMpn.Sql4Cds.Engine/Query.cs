@@ -156,7 +156,6 @@ namespace MarkMpn.Sql4Cds.Engine
                 })
                 .ToList();
         }
-    }
 
         protected TResult Execute<TResult>(IOrganizationService org, IQueryExecutionOptions options, OrganizationRequest req)
             where TResult : OrganizationResponse
